@@ -82,6 +82,13 @@
             <div class="contact-form">
               <h3>📋 Để lại thông tin tư vấn</h3>
               <form id="contactForm" novalidate aria-label="Form đăng ký nhận tư vấn">
+                <!-- Web3Forms config -->
+                <input type="hidden" name="access_key" value="PASTE_WEB3FORMS_KEY_HERE" />
+                <input type="hidden" name="subject" value="[Biển Đông Vũng Tàu] Khách hàng mới đăng ký tư vấn" />
+                <input type="hidden" name="from_name" value="Website Biển Đông Vũng Tàu" />
+                <input type="hidden" name="redirect" value="false" />
+                <!-- Honeypot anti-spam -->
+                <input type="checkbox" name="botcheck" style="display:none;" />
                 <div class="form-row">
                   <div class="form-group">
                     <label for="cf-name">Họ và tên <span style="color:#e53e3e;">*</span></label>
@@ -121,24 +128,73 @@
     </div>
   `;
 
-    // Simple form handler
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
+    // Web3Forms submit handler – gửi email về tienhoi.lh@gmail.com
+    document.getElementById('contactForm').addEventListener('submit', async function (e) {
         e.preventDefault();
+
         const name = document.getElementById('cf-name').value.trim();
         const phone = document.getElementById('cf-phone').value.trim();
         if (!name || !phone) {
-            alert('Vui lòng nhập họ tên và số điện thoại.');
+            showFormMsg('error', 'Vui lòng nhập họ tên và số điện thoại.');
             return;
         }
+
         const btn = this.querySelector('button[type="submit"]');
-        btn.innerHTML = '<i class="fas fa-check-circle"></i> Đã gửi thành công!';
-        btn.style.background = 'linear-gradient(135deg,#16a34a,#22c55e)';
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Đang gửi...';
         btn.disabled = true;
-        setTimeout(() => {
+
+        try {
+            const data = new FormData(this);
+            const res = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: data,
+            });
+            const json = await res.json();
+
+            if (json.success) {
+                btn.innerHTML = '<i class="fas fa-check-circle"></i> Đã gửi thành công!';
+                btn.style.background = 'linear-gradient(135deg,#16a34a,#22c55e)';
+                showFormMsg('success', '✅ Cảm ơn bạn! Chúng tôi sẽ liên hệ trong thời gian sớm nhất.');
+                this.reset();
+                setTimeout(() => {
+                    btn.innerHTML = '<i class="fas fa-paper-plane"></i> Gửi đăng ký ngay';
+                    btn.style.background = '';
+                    btn.disabled = false;
+                    hideFormMsg();
+                }, 5000);
+            } else {
+                throw new Error(json.message || 'Lỗi gửi form');
+            }
+        } catch (err) {
             btn.innerHTML = '<i class="fas fa-paper-plane"></i> Gửi đăng ký ngay';
-            btn.style.background = '';
             btn.disabled = false;
-            this.reset();
-        }, 4000);
+            showFormMsg('error', '❌ Gửi không thành công. Vui lòng thử lại hoặc gọi trực tiếp 0949 012 659.');
+            console.error('Web3Forms error:', err);
+        }
     });
+
+    function showFormMsg(type, msg) {
+        let el = document.getElementById('cf-msg');
+        if (!el) {
+            el = document.createElement('div');
+            el.id = 'cf-msg';
+            document.getElementById('contactForm').prepend(el);
+        }
+        el.style.cssText = `
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            ${type === 'success'
+                ? 'background:#f0fdf4;color:#16a34a;border:1px solid #bbf7d0;'
+                : 'background:#fff1f2;color:#dc2626;border:1px solid #fecaca;'}
+        `;
+        el.textContent = msg;
+    }
+
+    function hideFormMsg() {
+        const el = document.getElementById('cf-msg');
+        if (el) el.remove();
+    }
 })();
