@@ -9,22 +9,13 @@
           <!-- Images -->
           <div class="overview-images fade-up">
             <div class="overview-img-main">
-              <div class="img-placeholder" style="height:100%; min-height:220px;">
-                <i class="fas fa-city"></i>
-                <span>Mặt tiền biển – 155 Thùy Vân, Vũng Tàu</span>
-              </div>
+              <img src="public/khach-san-bien-dong-vung-tau-01-1-2048x1194.jpg" alt="Khách sạn Biển Đông Vũng Tàu – mặt tiền biển 155 Thùy Vân" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
             </div>
             <div class="overview-img-sm">
-              <div class="img-placeholder" style="height:100%; min-height:140px;">
-                <i class="fas fa-map-marked-alt"></i>
-                <span>Vị trí tổng thể</span>
-              </div>
+              <img src="public/khach-san-bien-dong-vung-tau-09-scaled.jpg" alt="Phối cảnh Khách sạn Biển Đông Vũng Tàu" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
             </div>
             <div class="overview-img-sm">
-              <div class="img-placeholder" style="height:100%; min-height:140px;">
-                <i class="fas fa-waves"></i>
-                <span>View biển Bãi Sau</span>
-              </div>
+              <img src="public/can-ho-view-bien.jpg" alt="Căn hộ view biển Bãi Sau – Condotel Biển Đông Vũng Tàu" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
             </div>
           </div>
 

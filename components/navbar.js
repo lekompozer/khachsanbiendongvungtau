@@ -1,7 +1,7 @@
 // components/navbar.js
 (function () {
     const el = document.getElementById('navbar');
-    el.className = 'navbar';
+    el.className = 'navbar scrolled';
     el.innerHTML = `
     <div class="container">
       <div class="nav-inner">
@@ -26,11 +26,6 @@
       </div>
     </div>
   `;
-
-    // Scroll effect
-    window.addEventListener('scroll', () => {
-        el.classList.toggle('scrolled', window.scrollY > 60);
-    });
 
     // Toggle mobile menu
     const toggle = document.getElementById('navToggle');

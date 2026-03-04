@@ -52,23 +52,14 @@
           <!-- Right: Visuals -->
           <div class="hero-visual" aria-label="Hình ảnh phối cảnh dự án">
             <div class="hero-main-img">
-              <div class="img-placeholder" style="height:100%; min-height: 280px;">
-                <i class="fas fa-building"></i>
-                <span>Phối cảnh tổng thể<br>Khách sạn Biển Đông Vũng Tàu</span>
-              </div>
+              <img src="public/phoi-canh-tong-quan-du-an.jpg" alt="Phối cảnh tổng thể Khách sạn Biển Đông Vũng Tàu" style="width:100%;height:100%;object-fit:cover;" loading="eager" />
             </div>
             <div class="hero-img-grid">
               <div class="hero-img-small">
-                <div class="img-placeholder" style="height:100%; min-height: 120px;">
-                  <i class="fas fa-swimming-pool"></i>
-                  <span>Hồ bơi vô cực</span>
-                </div>
+                <img src="public/ho-boi-du-an.jpg" alt="Hồ bơi dự án Biển Đông Vũng Tàu" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
               </div>
               <div class="hero-img-small">
-                <div class="img-placeholder" style="height:100%; min-height: 120px;">
-                  <i class="fas fa-umbrella-beach"></i>
-                  <span>Tầm nhìn biển</span>
-                </div>
+                <img src="public/view-bien-100.jpg" alt="Tầm nhìn biển Bãi Sau từ Biển Đông Vũng Tàu" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
               </div>
             </div>
           </div>
