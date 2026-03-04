@@ -21,8 +21,8 @@
           ${[
             { icon: 'fas fa-expand-arrows-alt', value: '12.278', unit: ' m²', label: 'Diện tích khu đất' },
             { icon: 'fas fa-layer-group', value: '98.956', unit: ' m²', label: 'Tổng diện tích sàn' },
-            { icon: 'fas fa-hotel', value: '327', unit: '', label: 'Phòng khách sạn' },
-            { icon: 'fas fa-home', value: '703', unit: '', label: 'Căn condotel' },
+            { icon: 'fas fa-hotel', value: '296', unit: '', label: 'Phòng khách sạn' },
+            { icon: 'fas fa-home', value: '654', unit: '', label: 'Căn condotel' },
         ].map(s => `
             <div class="spec-card fade-up">
               <div class="spec-icon"><i class="${s.icon}"></i></div>
@@ -39,7 +39,7 @@
             <h3><i class="fas fa-hotel"></i> Khối Khách Sạn</h3>
             ${[
             ['Số tầng khách sạn', '21 tầng', false],
-            ['Số phòng', '327 phòng', true],
+            ['Số phòng', '296 phòng', true],
             ['Tầng hầm', '2 tầng hầm', false],
             ['Diện tích xây dựng', '4.800 m²', false],
             ['Tiện ích', 'Hội nghị, spa, nhà hàng', false],
@@ -55,8 +55,8 @@
           <div class="specs-breakdown-card fade-up stagger-2">
             <h3><i class="fas fa-building"></i> Khối Condotel</h3>
             ${[
-            ['Số tầng condotel', '29 tầng', false],
-            ['Số căn hộ (dự kiến)', '703 căn', true],
+            ['Số tầng condotel', '28 tầng', false],
+            ['Số căn hộ (dự kiến)', '654 căn', true],
             ['Mặt tiền', 'Trực diện biển Bãi Sau', false],
             ['Đặc điểm', 'Ban công rộng, view biển', false],
             ['Tiện ích riêng', 'Hồ bơi, gym, sky garden', false],
