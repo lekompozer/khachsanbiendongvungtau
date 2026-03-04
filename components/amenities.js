@@ -60,13 +60,13 @@
                 tags: ['2 tầng hầm', 'Mái che', 'An toàn'],
                 icon: 'fas fa-parking',
             },
-        ].map(a => `
+        ].map((a, i) => `
             <article class="amenity-card fade-up" aria-label="${a.title}">
               <div class="amenity-img">
-                <div class="img-placeholder" style="height:100%;min-height:160px;">
-                  <i class="${a.icon}" style="font-size:2.2rem;"></i>
-                  <span>${a.title}</span>
-                </div>
+                <img src="public/khach-san-bien-dong-vung-tau-cq${i + 1}.jpg"
+                     alt="${a.title} – Khách sạn Biển Đông Vũng Tàu"
+                     style="width:100%;height:100%;object-fit:cover;"
+                     loading="lazy" />
               </div>
               <div class="amenity-body">
                 <div class="amenity-num">Tiện ích ${a.num}</div>

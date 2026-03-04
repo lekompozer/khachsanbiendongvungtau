@@ -397,6 +397,51 @@ ul {
     padding: 120px 0 80px;
 }
 
+/* Wave layers */
+.hero-waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hero-waves svg {
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    height: 100%;
+}
+
+.hero-wave-1 {
+    animation: waveMove 7s linear infinite;
+    opacity: 0.18;
+}
+
+.hero-wave-2 {
+    animation: waveMove 10s linear infinite reverse;
+    opacity: 0.1;
+    bottom: 10px;
+}
+
+.hero-wave-3 {
+    animation: waveMove 13s linear infinite;
+    opacity: 0.07;
+    bottom: 20px;
+}
+
+@keyframes waveMove {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 .hero::before {
     content: '';
     position: absolute;
