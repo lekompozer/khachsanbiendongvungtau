@@ -83,7 +83,7 @@
               <h3>📋 Để lại thông tin tư vấn</h3>
               <form id="contactForm" novalidate aria-label="Form đăng ký nhận tư vấn">
                 <!-- Web3Forms config -->
-                <input type="hidden" name="access_key" value="PASTE_WEB3FORMS_KEY_HERE" />
+                <input type="hidden" name="access_key" value="452ef107-073e-4a41-a5cc-3d19c36ffb10" />
                 <input type="hidden" name="subject" value="[Biển Đông Vũng Tàu] Khách hàng mới đăng ký tư vấn" />
                 <input type="hidden" name="from_name" value="Website Biển Đông Vũng Tàu" />
                 <input type="hidden" name="redirect" value="false" />
