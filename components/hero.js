@@ -42,15 +42,15 @@
 
             <div class="hero-stats" role="list" aria-label="Thông số dự án">
               <div class="hero-stat" role="listitem">
-                <div class="hero-stat-value">327</div>
+                <div class="hero-stat-value">296</div>
                 <div class="hero-stat-label">Phòng khách sạn</div>
               </div>
               <div class="hero-stat" role="listitem">
-                <div class="hero-stat-value">703</div>
+                <div class="hero-stat-value">654</div>
                 <div class="hero-stat-label">Căn condotel</div>
               </div>
               <div class="hero-stat" role="listitem">
-                <div class="hero-stat-value">50<span style="font-size:1rem">tầng</span></div>
+                <div class="hero-stat-value">28<span style="font-size:1rem">tầng</span></div>
                 <div class="hero-stat-label">Tổng quy mô</div>
               </div>
             </div>
