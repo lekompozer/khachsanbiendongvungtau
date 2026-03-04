@@ -389,7 +389,7 @@ ul {
    ========================================= */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(160deg, #03154a 0%, #0057b8 45%, #0080ff 75%, #00b4d8 100%);
+    background: var(--white);
     display: flex;
     align-items: center;
     position: relative;
@@ -401,14 +401,14 @@ ul {
     content: '';
     position: absolute;
     inset: 0;
-    background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background: none;
 }
 
 .hero-glow {
     position: absolute;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(0, 180, 216, 0.25) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 128, 255, 0.06) 0%, transparent 70%);
     border-radius: 50%;
     top: -100px;
     right: -100px;
@@ -419,7 +419,7 @@ ul {
     position: absolute;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(0, 87, 184, 0.3) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 180, 216, 0.05) 0%, transparent 70%);
     border-radius: 50%;
     bottom: -50px;
     left: -50px;
@@ -439,15 +439,14 @@ ul {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(8px);
+    background: rgba(0, 128, 255, 0.08);
+    border: 1px solid rgba(0, 128, 255, 0.2);
     padding: 8px 18px;
     border-radius: 50px;
     font-family: var(--font-head);
     font-size: 0.78rem;
     font-weight: 700;
-    color: #7dd3fc;
+    color: var(--blue-1);
     letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -461,13 +460,13 @@ ul {
     font-family: var(--font-head);
     font-size: clamp(1.9rem, 4.5vw, 3.2rem);
     font-weight: 800;
-    color: var(--white);
+    color: var(--text-dark);
     line-height: 1.18;
     margin-bottom: 10px;
 }
 
 .hero-title .highlight {
-    background: linear-gradient(90deg, #7dd3fc, #38bdf8, #0ea5e9);
+    background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -477,7 +476,7 @@ ul {
     font-family: var(--font-head);
     font-size: clamp(1rem, 2vw, 1.3rem);
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--text-mid);
     margin-bottom: 28px;
 }
 
@@ -486,12 +485,12 @@ ul {
     align-items: center;
     gap: 8px;
     font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.72);
+    color: var(--text-mid);
     margin-bottom: 32px;
 }
 
 .hero-address i {
-    color: #7dd3fc;
+    color: var(--blue-2);
 }
 
 .hero-stats {
@@ -502,9 +501,8 @@ ul {
 }
 
 .hero-stat {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    backdrop-filter: blur(8px);
+    background: var(--off-white);
+    border: 1px solid var(--border);
     border-radius: var(--radius-md);
     padding: 16px 12px;
     text-align: center;
@@ -514,7 +512,7 @@ ul {
     font-family: var(--font-head);
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--white);
+    color: var(--text-dark);
     line-height: 1;
     margin-bottom: 4px;
 }
@@ -522,7 +520,7 @@ ul {
 .hero-stat-label {
     font-size: 0.72rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.65);
+    color: var(--text-light);
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
@@ -543,7 +541,7 @@ ul {
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
-    border: 2px solid rgba(255, 255, 255, 0.15);
+    border: 2px solid var(--border);
 }
 
 .hero-img-grid {
@@ -557,7 +555,7 @@ ul {
     aspect-ratio: 4/3;
     border-radius: var(--radius-sm);
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--border);
 }
 
 /* =========================================

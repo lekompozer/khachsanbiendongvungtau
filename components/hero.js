@@ -43,7 +43,7 @@
               <a href="#contact-section" class="btn btn-primary">
                 <i class="fas fa-envelope"></i> Nhận tư vấn ngay
               </a>
-              <a href="tel:0949012659" class="btn btn-outline">
+              <a href="tel:0949012659" class="btn btn-outline-blue">
                 <i class="fas fa-phone-alt"></i> 0949 012 659
               </a>
             </div>
