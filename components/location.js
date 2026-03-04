@@ -10,10 +10,10 @@
           <div class="fade-up">
             <div class="location-map-wrap" role="complementary" aria-label="Bản đồ vị trí dự án">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.0567854060626!2d107.08534847480093!3d10.33929898977671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175a9b5f3c7a6c7%3A0x0!2s155%20Thu%E1%BB%B3y%20V%C3%A2n%2C%20Th%E1%BA%AFng%20Tam%2C%20V%C5%A9ng%20T%C3%A0u!5e0!3m2!1svi!2svn!4v1700000000000"
+                src="https://www.google.com/maps?q=Qu%E1%BA%A3ng+Tr%C6%B0%E1%BB%9Dng+Trung+T%C3%A2m+B%C3%A3i+Sau+V%C5%A9ng+T%C3%A0u,+Thu%CC%80y+V%C3%A2n,+Ph%C6%B0%E1%BB%9Dng+Th%E1%BA%AFng+Tam,+V%C5%A9ng+T%C3%A0u&z=17&output=embed&hl=vi"
                 loading="lazy"
-                title="Bản đồ vị trí Khách sạn Biển Đông Vũng Tàu – 155 Thùy Vân"
-                aria-label="Google Maps – 155 Thùy Vân, Vũng Tàu"
+                title="Bản đồ vị trí Khách sạn Biển Đông Vũng Tàu – Quảng Trường Bãi Sau, Thùy Vân"
+                aria-label="Google Maps – Quảng Trường Trung Tâm Bãi Sau, Thùy Vân, Vũng Tàu"
                 referrerpolicy="no-referrer-when-downgrade"
                 allowfullscreen>
               </iframe>
